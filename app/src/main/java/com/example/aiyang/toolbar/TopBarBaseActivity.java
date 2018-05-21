@@ -132,10 +132,9 @@ public abstract class TopBarBaseActivity extends AppCompatActivity {
         }else if (menuResId2 != 0 || !TextUtils.isEmpty(menuStr2)){
             getMenuInflater().inflate(R.menu.toobar, menu);
         }else {
-
-            //如果把下面这行代码表示右侧菜单显示默认值。
+            //下面这行代码表示右侧菜单显示默认值。
             //显示的默认Menu、Item里的值必须在menu文件中配置好文字和icon。
-//            getMenuInflater().inflate(R.menu.toobar, menu);
+           getMenuInflater().inflate(R.menu.toobar, menu);
         }
         return true;
     }
